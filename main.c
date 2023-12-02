@@ -1,16 +1,16 @@
-#include "loader.h"
+#include <stdio.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+#include "first.h"
+#include "second.h"
 
-int main(int argc, char *argv[]) {
-  if (argc > 1) {
-    loadRun(argv[1]);
-  }
-  return 0;
+int main(void)
+{
+
+        first();
+        second();
+
+        printf("Main function...\n");
+
+        return 0;
+
 }
-
-#ifdef __cplusplus
-}
-#endif
