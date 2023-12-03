@@ -7,12 +7,12 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}",
-                "-L.",
+                "${fileBasenameNoExtension}",
+                "${fileBasename}",
+                "-L./lib",
                 "-lhello",
-                "-Wl,-rpath,."
+                "-Wl,-rpath,./lib"
             ],
             "options": {
                 "cwd": "${fileDirname}"
