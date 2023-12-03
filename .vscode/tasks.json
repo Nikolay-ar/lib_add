@@ -12,7 +12,9 @@
                 "${fileBasename}",
                 "-L./lib",
                 "-lhello",
-                "-Wl,-rpath,./lib"
+                "-Wl,-rpath,./lib",
+                "-I",
+                "include"
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -25,6 +27,33 @@
                 "isDefault": true
             },
             "detail": "Задача создана отладчиком."
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc-11 сборка библиотеки libhello.so",
+            "command": "/usr/bin/gcc-11",
+            "args": [
+                "-shared",
+                "-Wall",
+                "-fPIC",
+                "-o",
+                "lib/libhello.so",
+                "source/first.c",
+                "source/second.c",
+                "-I",
+                "include"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Задача создана пользователем."
         }
     ],
     "version": "2.0.0"
