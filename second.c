@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "second.h"
+#include "hello.h"
 
 void second(void)
 {
