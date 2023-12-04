@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "C/C++: gcc-11 сборка и отладка активного файла",
+            "name": "C/C++: gcc сборка и отладка активного файла",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
@@ -23,7 +23,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: gcc-11 сборка активного файла",
+            "preLaunchTask": "C/C++: gcc сборка активного файла",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ],
